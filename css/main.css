@@ -1,0 +1,26 @@
+#mainContainer {
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:22em;
+    margin-top: -9em;
+    margin-left: -15em;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+.innerContainerElement {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.modal-dialog {
+  padding-top: 20%;
+}
+
+.labelElement {
+	color: #05BDE2;
+}

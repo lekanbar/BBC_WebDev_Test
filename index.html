@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sterling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- App CSS -->
+<link href="css/main.css" rel="stylesheet" media="screen" />
+
+<body>
+	<div id="mainContainer">
+        <div class="innerContainerElement">
+          <img src="images/logo.png" />
+          <h3>Sterling App</h3>
+        </div>
+        <div class="innerContainerElement">
+          <p>                                   
+         	 <div>
+               <label class="labelElement" for="amount">Enter Amount</label>
+               <input type="text" id="amount" class="form-control" placeholder="Amount e.g. 40p, &pound;12.50p" onkeypress="checkForEnterKeyValue(event);">
+             </div>
+             <span style="color:red;"><label id="error_message"></label></span>
+			 <br/><br/>
+             <button onclick="getAmountAndCount();" type="button" class="btn btn-success pull-right">
+             	Calculate <span class="glyphicon glyphicon-chevron-right"></span>
+             </button>
+           </p>
+        </div>
+	</div>
+	
+	<div class="modal fade" id="resultContainer" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Results</h4>
+	        </div>
+	        <div id="modalBody" class="modal-body">
+	           
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-info" data-dismiss="modal">
+	          	<span class="glyphicon glyphicon-ok"></span> OK
+	          </button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	
+	<!-- jQuery Library and Bootstrap js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- App's JS containing input processing logic -->
+	<script src="js/main.js"></script>
+</body>
+</html>
